@@ -11,6 +11,7 @@
 		BC770EEF2DAF0624000C6583 /* CoreLayoutContainers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLayoutContainers.swift; sourceTree = "<group>"; };
 		BCA272B82DAF1A970069DCD1 /* DiagonalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalLayout.swift; sourceTree = "<group>"; };
 		BCA272B92DAF1B700069DCD1 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		BCA272BD2DAF20B70069DCD1 /* ViewStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +56,7 @@
 				BC770EEF2DAF0624000C6583 /* CoreLayoutContainers.swift */,
 				BCA272B82DAF1A970069DCD1 /* DiagonalLayout.swift */,
 				BCA272B92DAF1B700069DCD1 /* ViewModifiers.swift */,
+				BCA272BD2DAF20B70069DCD1 /* ViewStyles.swift */,
 			);
 			path = Dragos;
 			sourceTree = "<group>";
