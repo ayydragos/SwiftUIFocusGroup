@@ -6,18 +6,12 @@
 //
 
 // random foreground
-// fade in on appear
+// magic appear (scale, opacity) + delay, duration
 // reveal on tap
 
 import SwiftUI
 
 struct RandomForegroundModifier: ViewModifier {
-    func body(content: Content) -> some View {
-
-    }
-}
-
-struct FadeInOnAppearModifier: ViewModifier {
     func body(content: Content) -> some View {
 
     }
@@ -44,7 +38,25 @@ struct RevealOnTapModifier: ViewModifier {
     }
 }
 
+struct MagicAppearModifier: ViewModifier {
+    @State private var scale: CGFloat = 0.5
+    @State private var opacity: Double = 0.0
+    var delay: Double
+    var duration: Double
+
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(scale)
+            .opacity(opacity)
+            .onAppear {
+                withAnimation(.easeIn(duration: duration).delay(delay)) {
+                    scale = 1.0
+                    opacity = 1.0
+                }
+            }
+    }
+}
+
 #Preview {
     Text("some content")
-        .modifier(RevealOnTapModifier())
 }
