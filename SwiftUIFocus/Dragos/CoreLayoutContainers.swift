@@ -9,9 +9,12 @@
 // VStack
 // ZStack
 // Spacer, Divider
+// List
 // Lazy - onAppear pe fiecare element print cu loaded
 // AnyLayout - toggle H and V cu animatie
 // ViewThatFits -
+// @ViewBuilder - folosit in spate, if/else, return
+// Custom Layout
 
 import SwiftUI
 
@@ -43,7 +46,6 @@ struct CoreLayoutContainers: View {
                 .overlay {
                     Text(String(value + 1))
                 }
-                .opacity(0.3)
         }
         .frame(width: 100, height: 100)
     }
@@ -61,3 +63,4 @@ extension Color {
         Color(hue: .random(in: 0...1), saturation: 1, brightness: 1)
     }
 }
+

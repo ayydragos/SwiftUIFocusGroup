@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		5E48A1622DAE88C200D8D77F /* SwiftUIFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC770EEF2DAF0624000C6583 /* CoreLayoutContainers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLayoutContainers.swift; sourceTree = "<group>"; };
+		BCA272B82DAF1A970069DCD1 /* DiagonalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -51,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				BC770EEF2DAF0624000C6583 /* CoreLayoutContainers.swift */,
+				BCA272B82DAF1A970069DCD1 /* DiagonalLayout.swift */,
 			);
 			path = Dragos;
 			sourceTree = "<group>";
