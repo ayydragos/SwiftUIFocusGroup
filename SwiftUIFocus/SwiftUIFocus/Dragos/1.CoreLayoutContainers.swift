@@ -23,15 +23,21 @@ struct CoreLayoutContainers: View {
     @State private var colorsCount: Double = 3
 
     var body: some View {
-        content
-            .safeAreaInset(edge: .top) {
-                Slider(value: $colorsCount, in: 0...20)
-            }
-            .toolbar {
-                ToolbarItem {
-                    Text(String(Int(colorsCount)))
+        ZStack {
+            content
+            Color.clear.frame(maxWidth: .infinity, maxHeight: .infinity)
+                .overlay(alignment: .top) {
+                    Slider(value: $colorsCount, in: 0...20)
                 }
+        }
+//        .frame(maxWidth: .infinity, maxHeight: .infinity)
+//        .overlay(alignment: .top) {
+//        }
+        .toolbar {
+            ToolbarItem {
+                Text(String(Int(colorsCount)))
             }
+        }
     }
 
     private var content: some View {

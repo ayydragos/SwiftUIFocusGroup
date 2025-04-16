@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIFocusApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoreLayoutContainers()
         }
     }
 }

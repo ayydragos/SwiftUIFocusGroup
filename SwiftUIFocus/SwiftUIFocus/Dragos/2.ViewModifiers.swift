@@ -13,7 +13,8 @@ import SwiftUI
 
 struct RandomForegroundModifier: ViewModifier {
     func body(content: Content) -> some View {
-
+        content
+            .foregroundStyle(Color.random)
     }
 }
 
@@ -59,4 +60,5 @@ struct MagicAppearModifier: ViewModifier {
 
 #Preview {
     Text("some content")
+        .modifier(MagicAppearModifier(delay: 1, duration: 3))
 }
